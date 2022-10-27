@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>SALOMON 살로몬</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css"/>
+</head>
+<body>
+    <header>
+        <ul class="flex end" id="util">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+        <ul class="flex between">
+            <li><a href="#" id="logo">LOGO</a></li>
+            <div id="find">
+                <input type="search" id="magnify" placeholder="검색어를 입력해주세요"/>
+                <a href="#"><img src="images/search.png" alt="검색버튼" id="magnify_glass"/></a>
+            </div>
+        </ul>
+        <nav>
+            <ul class="flex" id="gnb">
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">S&sol;LAB</a></li>
+                <li><a href="#">SPORTSTYLE</a></li>
+                <li><a href="#">SPORTS</a></li>
+                <li><a href="#">SALOMON</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">SALE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="vb">
+        <h6>비주얼배너영역</h6>
+        <div id="wrapper01">
+            <div class="bxslider">
+                <div>
+                  <img src="images/vb.jpg" title="슬라이더1번">
+                </div>
+                <div>
+                  <img src="images/vb.jpg" title="슬라이더2번">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="focusNow">
+        <h5>FOCUS NOW</h5>
+        <ul class="grid" id="focusNowList">
+            <li><a href="#"><span>신발</span></a></li>
+            <li><a href="#"><span>의류</span></a></li>
+            <li><a href="#"><span>가방</span></a></li>
+            <li><a href="#"><span>악세사리</span></a></li>
+            <li><a href="#"><span>고글</span></a></li>
+            <li><a href="#"><span>스키</span></a></li>
+        </ul>
+    </section>
+    <section id="search">
+        <h5>SEARCH</h5>
+            <div id="productName">
+                <form>
+                    <p>상품명</p>
+                    <input type="text" placeholder="검색어를 입력해주세요"/>
+                </form>
+                <ul class="flex">
+                    <li><a href="#">후리스</a></li>
+                    <li>|</li>
+                    <li><a href="#">트레이닝자켓</a></li>
+                    <li>|</li>
+                    <li><a href="#">점퍼</a></li>
+                    <li>|</li>
+                    <li><a href="#">반팔티</a></li>
+                    <li>|</li>
+                    <li><a href="#">기능성</a></li>
+                    <li>|</li>
+                    <li><a href="#">스키</a></li>
+                </ul>
+            </div>
+            <div id="category">
+                <form>
+                    <p>카테고리</p>
+                    <select>
+                        <option>카테고리 선택</option>
+                        <option>신발</option>
+                        <option>의류</option>
+                        <option>가방</option>
+                        <option>악세사리</option>
+                        <option>헬멧&amp;고글</option>
+                        <option>스키</option>
+                        <option>스노우보드</option>
+                    </select>
+                </form>
+            </div>
+            <div id="use">
+                <form>
+                    <p>용도</p>
+                    <select>
+                        <option>여행 테마 선택</option>
+                        <option>액티비티</option>
+                        <option>힐링</option>
+                    </select>
+                </form>
+            </div>
+            <div id="color">
+                <p>색상</p>
+                <ul class="flex">
+                    <li><a href="#">레드</a></li>
+                    <li><a href="#">오렌지</a></li>
+                    <li><a href="#">옐로</a></li>
+                    <li><a href="#">그린</a></li>
+                    <li><a href="#">블루</a></li>
+                    <li><a href="#">다크블루</a></li>
+                    <li><a href="#">블랙</a></li>
+                </ul>
+            </div>
+            <button class="button">검색</button>
+    </section> 
+    <section id="bestProduct">
+        <h5>BEST PRODUCT</h5>
+            <div class="grid">
+                <ul>
+                    <li><a href="#"><span>TOP 1</span></a></li>
+                    <li><a href="#"><span>TOP 2</span></a></li>
+                    <li><a href="#"><span>TOP 3</span></a></li>
+                    <li><a href="#"><span>TOP 4</span></a></li>
+                    <li><a href="#"><span>TOP 5</span></a></li>
+                    <li><a href="#"><span>TOP 6</span></a></li>
+                </ul>
+            </div>
+    </section>
+    <section id="promotion">
+        <h6>하단프로모션배너영역</h6>
+        <div>
+            <ul class="flex">
+                <li><a href="#"><img src="images/promotion.png" alt="배너1"></a></li>
+                <li><a href="#"><img src="images/promotion02.png" alt="배너2"></a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <ul class="flex spaceBetween">
+            <li>SOCIAL</li>
+            <li>국가선택</li>
+        </ul>
+        <div class="flex spaceBetween" id="spaceBetween02">
+            <ul class="flex" id="snsIcons">
+                <li><a href="https://www.facebook.com/Salomon"><img src="images/facebook.png" alt="페이스북"></a></li>
+                <li><a href="https://www.instagram.com/salomon"><img src="images/insta.png" alt="인스타그램"></a></li>
+                <li><a href="https://www.youtube.com/user/officialsalomon"><img src="images/youtube.png" alt="유튜브"></a></li>
+            </ul>
+            <select>
+                <option value="kor" .data-image="images/Korea-flag.png">대한민국(KOREA)</option>
+                <option value="usa" .data-image="images/United-states-flag.png">USA</option>
+                <option value="china" .data-image="images/China-flag.png">China</option>
+            </select>
+        </div>
+        <ul class="addr">
+            <li>&lpar;주&rpar; 아머스포츠코리아 대표 &colon; 크라소파스칼장쟈크 고객만족센터 &colon; 1833-4203</li>
+            <li>주소 &colon; 대전광역시 대덕구 대화로106번길 111 &lpar;한진택배&rpar; 백암B2B반품&lpar;아머스포츠코리아&rpar;</li>
+            <li>사업자등록번호 &colon; 120-81-57446 개인정보관리책임자 &colon; 박경호 통신판매 신고번호 &colon; 제2011-서울강남-02937호</li>
+            <li>&copy; 2019 - Salomon S.A.S.</li>
+        </ul>
+        <ul class="flex addr">
+            <li><a href="#">서비스 이용약관</a></li>
+            <li>|</li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li>|</li>
+            <li><a href="#">COOKIES</a></li>
+        </ul>
+    </footer>
+<script src="./js/jquery.bxslider.js"></script>
+<script src="./js/script.js"></script>
+<script>
+    $("#focusNowList>li:nth-of-type(1)").hover(function(){
+        $(this).parents("#focusNow").css({"background-image":"url('./images/focus01.png')",'background-repeat':'no-repeat','background-position':'center center'});
+    },function(){
+        $(this).parents("#focusNow").css({"background":"none",'background-repeat':'no-repeat','background-position':'center center'});
+    });
+    $("#focusNowList>li:nth-of-type(2)").hover(function(){
+        $(this).parents("#focusNow").css({"background-image":"url('./images/focus02.png')",'background-repeat':'no-repeat','background-position':'center center'});
+    },function(){
+        $(this).parents("#focusNow").css({"background":"none",'background-repeat':'no-repeat','background-position':'center center'});
+    });
+    $("#focusNowList>li:nth-of-type(3)").hover(function(){
+        $(this).parents("#focusNow").css({"background-image":"url('./images/focus03.png')",'background-repeat':'no-repeat','background-position':'center center'});
+    },function(){
+        $(this).parents("#focusNow").css({"background":"none",'background-repeat':'no-repeat','background-position':'center center'});
+    });
+    $("#focusNowList>li:nth-of-type(4)").hover(function(){
+        $(this).parents("#focusNow").css({"background-image":"url('./images/focus04.png')",'background-repeat':'no-repeat','background-position':'center center'});
+    },function(){
+        $(this).parents("#focusNow").css({"background":"none",'background-repeat':'no-repeat','background-position':'center center'});
+    });
+    $("#focusNowList>li:nth-of-type(5)").hover(function(){
+        $(this).parents("#focusNow").css({"background-image":"url('./images/focus05.png')",'background-repeat':'no-repeat','background-position':'center center'});
+    },function(){
+        $(this).parents("#focusNow").css({"background":"none",'background-repeat':'no-repeat','background-position':'center center'});
+    });
+    $("#focusNowList>li:nth-of-type(6)").hover(function(){
+        $(this).parents("#focusNow").css({"background-image":"url('./images/focus06.png')",'background-repeat':'no-repeat','background-position':'center center'});
+    },function(){
+        $(this).parents("#focusNow").css({"background":"none",'background-repeat':'no-repeat','background-position':'center center'});
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url('layout.css');
+header{background: #fff;}
+.wrap{width:100%; position: relative;}
+#gnb a{color:#333;}
+header h2 a{
+    background-image: url('../images/glass2.png');
+}
+#gnb{position: absolute; right:10%;}
+
+#logo>a{
+    display: block; width: 100%; height: 100%;
+    background: url('../images/logo2.png') no-repeat;
+    overflow: hidden; text-indent: -9999px;
+    margin-left: 10px;
+}
+
+/*비주얼배너 영역*/
+#inv{
+    height: 385px; position: relative;
+    background: url('../images/submain.jpg') no-repeat;
+}
+#inv h2, #inv h3{color:#fff; text-align: center;}
+#inv .tgroup{
+    position: absolute;
+    top:20%; left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*비주얼배너 아래 영역*/
+#under_vb h4{
+    text-indent: -9999px; overflow: hidden;
+    background: url('../images/intro.png') no-repeat;
+    width:402px; height: 150px;
+    margin:50px auto 100px auto;
+}
+#under_vb>ul>li{
+    text-align: center; color:#666; 
+}
+#under_vb>ul>li:first-child{
+    font-size: 1.5rem; font-weight: 600;
+    margin-bottom: 20px;
+}
+#under_vb>ul>li:nth-child(2){
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+span.line{
+    display: block; width:500px; height: 1px; 
+    background: #ddd; margin:20px auto;
+}
+
+/*노란박스 영역*/
+#square{width:80%; margin:0 auto;}
+#square article{height: 300px; width:100%;}
+#square article ul{
+    background: darkorange;
+    height: 100%; position: relative;
+}
+#square article ul li{
+    color:#fff; text-align: center;
+    position: absolute; top:50%; left:50%;
+    transform: translate(-50%,-50%);
+}
+#square article ul li:first-child{
+    font-size: 2rem; font-weight: 600;
+    padding-bottom: 30px;
+}
+#square article ul li:last-child{padding-top: 30px;}
+#square>article:first-child{margin-top: 100px;}
+#square>article:first-child>ul:first-child{width:55%;}
+#square>article:first-child>ul:last-child{width:44%;}
+#square>article:first-child, 
+#square>article:nth-child(2){margin-bottom: 10px;}
+#square>article:nth-child(2)>ul:first-child{width:30%;}
+#square>article:nth-child(2)>ul:last-child{width:68%;}
+#square>article:last-child>ul:first-child{width:49%;}
+#square>article:last-child>ul:last-child{width:49%;}
+#square>article:last-child{margin-bottom: 100px;}

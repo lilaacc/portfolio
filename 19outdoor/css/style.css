@@ -1,0 +1,287 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*
+font-family: 'Nanum Gothic', sans-serif;
+*/
+a,a:link,a:visited,a:hover,a:active{
+    list-style: none;
+    color:#333;
+    text-decoration: none;
+}
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    width: 1280px; margin: 0 auto;
+}
+h6{
+    display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+h5{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+.end{justify-content: flex-end;}
+.between{justify-content: space-between;}
+
+
+/*header*/
+header{
+    height: 180px;
+    background-color: #111;
+}
+header .flex li a{
+    display: block; color:#fff;
+}
+#util li{margin: 10px 0 10px 50px;}
+#util li:last-child{margin-right: 20px;}
+#logo{
+    display: block;
+    width: 94px; height: 84px;
+    background-image: url('../images/logo-salomon.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -9999px; overflow: hidden;
+    margin-left: 20px;
+}
+#gnb{
+    justify-content: space-around;
+    margin: 20px 0;
+    font-weight: 700;
+}
+#gnb li a{
+    display: block; height: 30px;
+}
+#gnb li:hover a{
+    border-bottom: 1px solid darkturquoise;
+    color:darkturquoise;
+}
+#find{
+    width: 280px; height: 30px;
+    line-height: 30px;
+    padding: 10px 0 0 0;
+    position: relative;
+}
+#magnify_glass{
+    height: 21px;
+    position: absolute;
+    right:35px; z-index: 99999;
+    top:50%; transform: translateY(-25%);
+}
+#magnify{
+    height: 30px; width: 250px;
+    vertical-align: top;
+}
+
+/*FOCUS NOW*/
+#focusNow{
+    height: 810px;
+    margin-top: 150px;
+}
+#focusNow ul{
+    display: flex;
+    flex-flow: row wrap;
+    width: 700px; height: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: space-around;
+}
+#focusNowList span{background-color: #fff;}
+#focusNow .grid li a{display: block;}
+#focusNow .grid li{
+    width: 200px; height: 200px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 450px;
+    margin-top: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+#focusNow .grid li:nth-of-type(1){
+    background-image: url('../images/focus01.png');
+}
+#focusNow .grid li:nth-of-type(1):hover #focusNow{
+    background-image: url('../images/focus01.png');
+    height: 870px; width: 870px;
+}
+#focusNow .grid li:nth-of-type(2){
+    background-image: url('../images/focus02.png');
+}
+#focusNow .grid li:nth-of-type(3){
+    background-image: url('../images/focus03.png');
+}
+#focusNow .grid li:nth-of-type(4){
+    background-image: url('../images/focus04.png');
+}
+#focusNow .grid li:nth-of-type(5){
+    background-image: url('../images/focus05.png');
+}
+#focusNow .grid li:nth-of-type(6){
+    background-image: url('../images/focus06.png');
+}
+
+/*SEARCH*/
+#search{font-size: 1.1rem; font-weight: 700;}
+#search div{margin: 20px auto;}
+#search p{margin: 10px 0;}
+/*상품명*/
+#productName{width: 500px; margin: 0 auto;}
+#productName input{width: 500px; height: 25px; margin-bottom: 10px;}
+#productName .flex li{
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+/*카테고리*/
+#category{width: 500px; margin: 0 auto;}
+#category select{width: 508px; height: 30px;}
+/*용도*/
+#use{width: 500px; margin: 0 auto;}
+#use select{width: 508px; height: 30px;}
+/*색상*/
+#color{width: 500px; margin: 0 auto;}
+#color .flex{
+    width: 510px; height: 50px;
+    justify-content: space-between;
+}
+#color li{
+    width: 30px; height: 30px;
+    border-radius: 15px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#color li a{display: block;}
+#color li:nth-of-type(1){
+    background-color: red;
+}
+#color li:nth-of-type(2){
+    background-color: orange;
+}
+#color li:nth-of-type(3){
+    background-color: yellow;
+}
+#color li:nth-of-type(4){
+    background-color: green;
+}
+#color li:nth-of-type(5){
+    background-color: blue;
+}
+#color li:nth-of-type(6){
+    background-color: darkblue;
+}
+#color li:nth-of-type(7){
+    background-color: purple;
+}
+/*검색버튼*/
+#search .button{
+    width: 200px; height: 35px;
+    display: block;
+    margin: 0 auto;
+    background-color: #111;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*BEST PRODUCT*/
+#bestProduct{margin-top:150px;}
+#bestProduct{height: 700px;}
+#bestProduct ul{
+    display: flex;
+    flex-flow: row wrap;
+    width: 760px; height: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+}
+#bestProduct .grid li a{
+    display: block; color:#fff;
+}
+#bestProduct .grid li{
+    width: 250px; height: 250px;
+    border: 1px solid #111; /**/
+    text-align: center;
+    line-height: 450px;
+    font-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    vertical-align: top;
+}
+#bestProduct .grid li span{background-color: #333;}
+#bestProduct .grid li:nth-of-type(1){
+    background-image: url('../images/best01.png');
+    border-right: none;
+    border-bottom: none;
+}
+#bestProduct .grid li:nth-of-type(2){
+    background-image: url('../images/best02.png');
+    border-right: none;
+    border-bottom: none;
+}
+#bestProduct .grid li:nth-of-type(3){
+    background-image: url('../images/best03.png');
+    border-bottom: none;
+}
+#bestProduct .grid li:nth-of-type(4){
+    background-image: url('../images/best04.png');
+    border-right: none;
+}
+#bestProduct .grid li:nth-of-type(5){
+    background-image: url('../images/best05.png');
+}
+#bestProduct .grid li:nth-of-type(6){
+    background-image: url('../images/best06.png');
+    border-left: none;
+}
+
+/*하단 배너*/
+#promotion ul li a{}
+#promotion ul li a img{
+    width: 640px; height: 330px;
+}
+
+/*footer*/
+footer{
+    height: 300px; background-color: #111;
+    color: #fff;
+}
+footer a{color:#fff;}
+footer .flex li a{color:#fff;}
+.spaceBetween{
+    font-weight: 700;
+    justify-content: space-between;
+    width: 80%;
+    text-align: left;
+    padding: 20px 0 0 20px;
+    margin-bottom: 5px;
+}
+#snsIcons li{
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#spaceBetween02{
+    width: 86%;
+}
+.addr{
+    padding: 20px 0 0 20px;
+}
+footer ul:nth-of-type(2){
+    line-height: 1.5rem;
+}
+footer ul:nth-of-type(3) li{
+    margin-right: 10px;
+}

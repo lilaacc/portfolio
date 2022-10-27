@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Whisky</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+</head>
+<body>
+    <header>
+        <div class="bgcolor">
+            <h2>유틸영역</h2>
+            <ul class="util wrap flex">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#" class="modal"></a></li>
+                <div id="find">
+                    <input type="search" id="magnify" length="20" placeholder="검색어를 입력해주세요"/>
+                    <a href="#"><img src="images/search.png" alt="검색버튼" id="magnify_glass"/></a>
+                    <a href="#"><img src="images/close.png" alt="엑스버튼" id="close_btn"/></a>
+                </div>
+            </ul>
+        </div>
+        <ul class="gnb wrap flex">
+            <li><a href="mainpage.html">HOME</a></li>
+            <li><a href="#">COCKTAILS</a></li>
+            <li><a href="#">KNOWLEDGE</a>
+                <ul class="submenu">
+                    <li><a href="subpage.html">SINGLE MALT</a></li>
+                    <li><a href="#">HISTORY</a></li>
+                </ul>
+            </li>
+            <li><a href="#">SHOP</a>
+                <ul class="submenu shop">
+                    <li><a href="#">WHISKY</a></li>
+                    <li><a href="#">GLASSES</a></li>
+                </ul>
+            </li>
+            <li><a href="#">PROMOTION</a>
+                <ul class="submenu">
+                    <li><a href="#">EXPERT BLOG</a></li>
+                    <li><a href="#">MALT MASTER</a></li>
+                    <li><a href="#">RECENT NEWS</a></li>
+                </ul>
+            </li>
+            <li><a href="mainpage.html" id="logo"><img src="images/logo.png" alt="로고" /></a></li>
+        </ul>
+        </div>
+    </header>
+    <section id="vb">
+        <div class="wrap">
+            <h2>비주얼배너영역</h2>
+            <div class="bxslider">
+                <div>
+                  <img src="images/visual_bn01.jpg" title="슬라이더1번">
+                </div>
+                <div>
+                  <img src="images/visual_bn02.jpg" title="슬라이더2번">
+                </div>
+                <div>
+                  <img src="images/visual_bn03.jpg" title="슬라이더3번">
+                </div>
+            </div>
+    </section>
+    <section id="list">
+        <div class="wrap flex">
+            <h2>프리미엄상품영역</h2>
+            <figure>
+                <img src="images/premium_bn01.jpg" alt="프리미엄1" />
+                <figcaption>Glenfiddich 50Y 70CL<br />
+                    £ 24,000.00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/premium_bn02.jpg" alt="프리미엄2" />
+                <figcaption>Glenfiddich 50Y 70CL<br />
+                    £ 24,000.00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/premium_bn03.jpg" alt="프리미엄3" />
+                <figcaption>Glenfiddich 50Y 70CL<br />
+                    £ 24,000.00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/premium_bn04.jpg" alt="프리미엄4" />
+                <figcaption>Glenfiddich 50Y 70CL<br />
+                    £ 24,000.00</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="maca" class="wrap flex">
+        <div class="macal">
+            <h2>macallan리스트</h2>
+            <p>MACALLAN</p>
+            <img src="images/macallan.jpg" alt="macallan" />
+        </div>
+        <div class="img flex">
+            <figure>
+                <img src="images/product_01.jpg" alt="prod1" />
+                <figcaption>THE MACALLAN RUBY 70CL</figcaption>
+                <figcaption>£ 225.00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_01.jpg" alt="prod2" />
+                <figcaption>THE MACALLAN RUBY 70CL</figcaption>
+                <figcaption>£ 225.00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_01.jpg" alt="prod3" />
+                <figcaption>THE MACALLAN RUBY 70CL</figcaption>
+                <figcaption>£ 225.00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_01.jpg" alt="prod4" />
+                <figcaption>THE MACALLAN RUBY 70CL</figcaption>
+                <figcaption>£ 225.00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_01.jpg" alt="prod5" />
+                <figcaption>THE MACALLAN RUBY 70CL</figcaption>
+                <figcaption>£ 225.00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_01.jpg" alt="prod6" />
+                <figcaption>THE MACALLAN RUBY 70CL</figcaption>
+                <figcaption>£ 225.00</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="glen" class="wrap flex">
+        <div class="glenmo">
+            <h2>glenmorangie리스트</h2>
+            <p>GLENMORANGIE</p>
+            <img src="images/glenmorangie.jpg" alt="glenmorangie" />
+        </div>
+        <div class="img02 flex">
+            <figure>
+                <img src="images/product_02.jpg" alt="prod201" />
+                <figcaption>GLENMORANGIE SIGNET</figcaption>
+                <figcaption>£ 153.58</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_02.jpg" alt="prod202" />
+                <figcaption>GLENMORANGIE SIGNET</figcaption>
+                <figcaption>£ 153.58</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_02.jpg" alt="prod203" />
+                <figcaption>GLENMORANGIE SIGNET</figcaption>
+                <figcaption>£ 153.58</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_02.jpg" alt="prod204" />
+                <figcaption>GLENMORANGIE SIGNET</figcaption>
+                <figcaption>£ 153.58</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_02.jpg" alt="prod205" />
+                <figcaption>GLENMORANGIE SIGNET</figcaption>
+                <figcaption>£ 153.58</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product_02.jpg" alt="prod206" />
+                <figcaption>GLENMORANGIE SIGNET</figcaption>
+                <figcaption>£ 153.58</figcaption>
+            </figure>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap flex">
+            <ul>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">THE STORY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">PRIVACY&COOKIE POLICY</a></li>
+                <li><a href="#">TERM&CONDITIONS</a></li>
+                <li><a href="#">SHOPPING</a></li>
+            </ul>
+            <ul>
+                <li>FOLLOW US</li>
+                <ul class="sns">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </ul>
+            <p>Copyrightⓒ 2020 SMW. all right reserved.</p>
+        </div>
+    </footer>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/java.js"></script>
+</body>
+</html>

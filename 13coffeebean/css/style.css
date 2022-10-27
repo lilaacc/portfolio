@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+}
+a, a:link, a:visited, a:hover, a:active{
+	text-decoration:none;
+    color:#666;
+}
+
+/*공통*/
+.wrap, #btn{width: 1440px; margin: 0 auto;}
+.wrap02{width:1280px; margin: 0 auto;}
+.flex{display: flex; flex-flow: row wrap;}
+h3{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+/*헤더 영역*/
+header{height:200px;}
+.util{
+    background: #ccc;
+    height: 50px; width:100%;
+    line-height: 50px;
+}
+.util_menu{justify-content: flex-end;}
+.util_menu li{margin-left: 30px;}
+.util_menu li:last-child{
+    width:75px; cursor: pointer;
+    background: url('../img/bean.jpg') no-repeat;
+    text-indent: -9999px;
+}
+.including{
+	width:80%;
+	justify-content:space-between;
+	align-items:center;
+}
+.gnb{
+	line-height: 100px; height: 100px; 
+	width:80%;
+}
+.gnb li{margin-left: 50px;}
+#logo{width:70px; height:70px;}
+
+/*비주얼배너*/
+#vb{
+    height: 540px;
+    text-align: center;
+    background:url('../img/banner1.jpg') no-repeat 50%;
+    cursor: pointer;
+}
+#vb02{
+    height: 400px;
+    text-align: center;
+    background:url('../img/banner2.jpg') no-repeat 50%;
+    cursor: pointer;
+}
+
+/*md's pick*/
+h2{
+    font-family: 'Nanum Myeongjo', serif;
+    color:#fea500; font-size: 1.5rem;
+    text-align: center;
+    margin: 80px 0;
+    font-weight: bold;
+}
+#md_pick ul li:nth-child(2){
+    margin: 30px 0; font-weight: bold;
+    font-size: 1.2rem;
+}
+#md_pick ul li:nth-child(2) a{color:#000;}
+#md_pick ul li{text-align: center;}
+#md_pick ul li:last-child a{
+    color:#fea500;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 800;
+}
+
+/*what's new*/
+#new{margin-top: 150px;}
+#new h2{margin-bottom: 100px;}
+#new div ul{margin-right: 50px;}
+#new div ul:last-child{margin-right: 0;}
+#new div ul li:last-child{
+    margin-top: 30px; text-align: center;
+    font-weight: 800; font-size: 1.2rem;
+}
+#new div ul li:last-child a{
+    color:#fea500;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+/*보라색 영역*/
+#sns{
+    background: #81007f; height: 780px; width:100%;
+    margin-top: 200px;
+}
+#sns h3{
+    color:#fff; text-align: center;
+    padding:70px 0 40px 0;
+    font-size: 1.5rem;
+}
+#sns h4{
+    text-align: center;
+    background: #fea500; border: 0;
+    width: 500px; cursor: pointer;
+    height: 50px; line-height: 50px;
+    margin-top:20px;
+}
+#sns h4 a{color:#fff; font-family: 'Nanum Myeongjo', serif;}
+#sns ul{padding: 80px 0;}
+#sns ul li{
+    background: url('') no-repeat center center/250px;
+    text-indent: -9999px;
+    width:240px; height: 240px;
+}
+#sns ul li:nth-child(1){background-image: url(../img/img8.jpg);}
+#sns ul li:nth-child(2){background-image: url(../img/img9.jpg);}
+#sns ul li:nth-child(3){background-image: url(../img/img10.jpg);}
+#sns ul li:nth-child(4){background-image: url(../img/img11.jpg);}
+#sns ul li:nth-child(5){background-image: url(../img/img12.jpg);}
+#sns ul li:nth-child(6){background-image: url(../img/img13.jpg);}
+#sns ul li:nth-child(7){background-image: url(../img/img14.jpg);}
+#sns ul li:nth-child(8){background-image: url(../img/img15.jpg);}
+#sns ul li:nth-child(9){background-image: url(../img/img16.jpg);}
+#sns ul li:nth-child(10){background-image: url(../img/img17.jpg);}
+#sns ul li:nth-child(11){background-image: url(../img/img18.jpg);}
+#sns ul li:nth-child(12){background-image: url(../img/img19.jpg);}
+
+/*footer*/
+footer{
+    background: #ddd;
+    width:100%; height: 100%;
+}
+.ft_menu{
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.ft_menu ul li{margin: 15px; font-weight: 400;}
+.ft_menu ul li a{color:#79452f;}
+.ft_menu ul li:first-child{
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 20px;
+}
+.ft_menu ul li:first-child a{
+    color:#c7692b; font-weight: 500;
+    font-size: 1.2rem;
+}
+#offer{font-weight: 800;}
+footer hr{border:1px solid #79452f; margin: 40px 0;}
+.ft_menu02 li{margin: 0 10px 30px 0;}
+.ft_menu02 a{color:#79452f;}
+footer address{color:#79452f; line-height: 2;}
+.sns_icon{
+    width:300px; left:1100px;
+    position: relative; bottom:180px;
+}
+.sns_icon li{margin-left: 20px;}

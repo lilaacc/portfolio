@@ -1,0 +1,190 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*
+font-family: 'Noto Sans KR', sans-serif;
+*/
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+}
+a,a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color:#333;
+}
+/*공통*/
+.wrap{width:1200px; margin:0 auto;}
+.flex{display: flex; flex-flow:row wrap;}
+span{background: #deeff6;}
+#whole{margin-top: 20px;}
+
+/*헤더 스타일*/
+header{height: 200px; position: relative;}
+#logo img{width:50px; height: 50px;}
+#logo>a{
+    display: block;
+    width:100%; height: 100%;
+    text-align: center;
+}
+.util{justify-content: flex-end;}
+.util li{margin-left: 30px;}
+.gnb{position: absolute; bottom:0;}
+.gnb li{
+    cursor: pointer;
+    font-size: 1.3rem; font-weight: 500;
+    line-height: 2; width:200px; height: 80px;
+    text-align: center;
+}
+.gnb li a{display: inline-block;}
+.gnb li:hover a{
+    color:#34c4ec;
+    border-bottom: 3px solid #34c4ec;
+    width:50%;
+}
+
+/*비주얼배너*/
+.vb{margin-bottom: 100px;}
+
+/*비주얼배너 아래*/
+.under_vb{
+    height: 500px; position: relative;
+    margin-bottom: 100px;
+}
+.top_box{
+    width:480px; height: 280px;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    left:50%; top:10%;
+}
+.top_box>h2{
+    color:#78b3c5; font-size: 1.5rem; 
+    font-weight: 500; padding: 25px 0 0 25px;
+}
+.top_box>p{
+    line-height: 2.5; margin-top: 10px;
+    padding: 20px 0 0 25px;
+}
+.img li:nth-child(2), .img li:nth-child(3){
+    width:210px; height: 155px;
+    position: absolute; bottom:0;
+}
+.img li:nth-child(2){right:15%;}
+.img li:nth-child(3){right:-5%;}
+.img li:nth-child(2) img,
+.img li:nth-child(3) img{transition:all .4s;}
+.img li:nth-child(2):hover img,
+.img li:nth-child(3):hover img{transform: scale(1.1);}
+
+/*popular items 영역*/
+.popular{
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.popular h3{
+    font-size: 2.8rem; letter-spacing: -4px;
+    color:#79b1c5; font-weight: 600;
+    margin-bottom: 20px;
+}
+.popular p{
+    color:#ddd; line-height: 2;
+    margin-bottom: 20px;
+}
+.popular button{
+    width:100px; height: 40px;
+    border:1px solid #79b1c5;
+    color:#79b1c5; background: #fff;
+}
+.popular figure img{margin-left: 20px;}
+
+/*투데이스토리 영역*/
+.story{height: 900px; position: relative; margin-bottom: 100px;}
+.small_title{text-align: center; margin-bottom: 50px;}
+.small_title h4{
+    font-size: 1.9rem;
+    color:#666; font-weight: 600;
+}
+.small_title h5{margin-top: 20px; color:#999;}
+#story01{
+    width:514px; height: 514px;
+    background: url('../images/story_1.png');
+    text-indent: -9999px; overflow: hidden;
+    position: absolute; top:0; right:0;
+}
+#story02{
+    width:514px; height: 514px;
+    background: url('../images/story_2.png');
+    text-indent: -9999px; overflow: hidden;
+    position: absolute; bottom:0; left:0;
+}
+.small{
+    border-left: 5px solid #77abba;
+    position: absolute;
+    left:10%; top:10%;
+    font-size: 1.1rem;
+    line-height: 2.5;
+    width:650px; height: 220px;
+    background: rgba(255,255,255,0.6);
+    z-index: 999;
+}
+.small02{
+    width:580px; height: 220px;
+    background: rgba(255,255,255,0.6);
+    border-right: 5px solid #77abba;
+    position: absolute;
+    right:15%; bottom:10%;
+    font-size: 1.1rem;
+    line-height: 2.5; z-index: 999;
+    text-align: right;
+}
+.small h6, .small02 h6{color:#2b6375; font-weight: 600;}
+.small h6{padding: 20px 0 0 20px;}
+.small02 h6{padding: 20px 20px 0 0;}
+.small p, .small02 p{font-size: 0.9rem;}
+.small p{padding: 10px 0 20px 20px;}
+.small02 p{padding: 10px 20px 20px 0;}
+
+/*인스타그램 영역*/
+.instagram{height:323px; margin-bottom: 60px;}
+.small_title h4{color:#333;}
+.small_title h5 span{
+    background: transparent;
+    color:#78b3c5; font-weight: 600;
+}
+.insta li a{
+   display: none;
+   border: 1px solid #fff;
+   color:#fff;
+   line-height:30px;
+   text-align:center;
+   background: transparent;
+   width:80px; height: 30px;
+   position: relative;
+   bottom:55%; left:32%;
+}
+.insta{justify-content: space-between;}
+.insta li{width:206px; height: 206px;}
+.insta li:hover img{
+	cursor:pointer;
+    transition: transform 1s;
+    filter: brightness(70%);
+}
+.insta li:hover a{display: block;}
+
+/*푸터 영역*/
+footer{
+    height: 300px; text-align: center;
+    background: #deeff6; color:#666;
+}
+.ft_menu{
+    padding: 10px 0;
+    height: 50px; line-height: 50px;
+    width:30%; font-weight: 600;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+.ft_menu li a{color:#666;}
+address{line-height: 2; font-size: 0.9rem;}
+.sns_icon{
+    width:15%; justify-content: space-between;
+    padding: 20px 0 30px 0;
+}

@@ -1,0 +1,128 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none;}
+a,a:link,a:visited,a:hover,a:active{
+	text-decoration:none;
+	color:#666;
+}
+body{
+	width:1920px; margin:0 auto;
+}
+/* 헤더 영역 */
+.nav{
+	width:1200px; height:100px;
+	position:relative;
+	margin:0 auto;
+}
+.gnb>li{float:left;}
+#us,.gnb{float:right;}
+.gnb::after,
+.wrap::after,
+.ft_menu::after,
+.arrow::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+#logo{
+	position:absolute;
+	left:0; bottom:40px;
+}
+.gnb{
+	position:absolute;
+	right:120px; bottom:40px;
+}
+.gnb li a{
+	padding:0 20px;
+}
+#us{
+	width:79px; height:60px;
+	border-left:1px solid #ddd;
+	position:absolute;
+	right:0; top:0;
+	padding:0 15px;
+}
+#us img{
+	position:absolute;
+	right:0; bottom:5px;
+}
+
+/* VB 영역 */
+#vb{
+	width:1920px;
+	position:relative;
+}
+#vb>h2{
+	text-indent:-9999px;
+	overflow:hidden;
+	width:31px; height:52px;
+	position:absolute;
+	bottom:45%;
+}
+#vb>h2:first-child{
+	background:url('../images/icon_ar_l.png') no-repeat;
+	left:20px;
+	cursor:pointer;
+}
+#vb>h2:last-of-type{
+	background:url('../images/icon_ar_r.png') no-repeat;
+	right:20px;
+	cursor:pointer;
+}
+
+/* vb 아래 */
+#middle_menu>h2{
+	text-indent:-99999px;
+	overflow:hidden;
+}
+#middle_menu{
+	width:1200px;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-between;
+	margin:0 auto;
+}
+.part01, .part02, .part03{
+	width:400px; height:120px;
+	margin:0 0 50px 0;
+}
+.part01 a, .part02 a, .part03 a{
+	display:flex;
+	flex-flow:row nowrap;	
+}
+.part01 dl dt, .part02 dl dt, 
+.part03 dl dt{
+	color:#183e84;
+	font-weight:bold;
+	padding:10px 20px;
+}
+.part01 dl dd,
+.part02 dl dd,
+.part03 dl dd{
+	padding:0 20px;
+	font-size:13px;
+}
+
+/* 푸터 영역 */
+footer{
+	width:40%;
+	margin:50px auto;
+	height:100px;
+	position:relative;
+}
+.ft_menu{
+	width:540px;
+	position:absolute;
+	top:-5px; right:0;
+}
+.ft_menu li{
+	float:left;
+	padding:0 10px;
+	font-size:0.8rem;
+	margin-bottom:5px;
+}
+.ft_menu li a{float:left;}
+.ft_menu li:last-child{
+	font-size:0.7rem;
+}

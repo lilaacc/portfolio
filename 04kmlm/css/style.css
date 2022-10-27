@@ -1,0 +1,240 @@
+@charset 'utf-8';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/*공통*/
+h2{
+    display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+a,a:link,a:visited,a:hover,a:active{
+    list-style: none; text-decoration: none;
+    color:#333;
+}
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+body{
+    margin: 10px auto 0;
+    overflow-x: hidden;
+    width: 1440px;
+}
+.flex{
+    display: flex; flex-flow: row wrap;
+    justify-content: space-around;
+}
+.flex_col{display: flex; flex-flow: column wrap;}
+.bd_btm{
+    border-bottom: 2px solid darkblue;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bd_btm>li{margin: 5px 5px 10px;}
+.bd_btm>li:first-child{font-size: 1.2rem; font-weight: 500;}
+.small{font-weight: 500;}
+
+/*유틸메뉴*/
+#util{
+    justify-content: flex-end;
+}
+#util li{margin: 0 10px;}
+#util li:nth-child(1),
+#util li:nth-child(2){margin: 0 10px;}
+
+/*로고*/
+#logo>a{
+    display: block;
+    margin: 30px auto;
+    width: 385px; height: 70px;
+    background-image: url('../images/logo.jpg');
+    background-repeat: no-repeat;
+    text-indent: -9999px; overflow: hidden;
+}
+
+/*gnb*/
+#navi{margin: 10px auto;}
+.bd_btm02{border-bottom:3px solid #f0ddb4;}
+#gnb{justify-content: space-around;}
+#gnb li{
+    text-align: center;
+    font-size: 1.3rem; font-weight: 500;
+    margin: 10px 0 20px;
+}
+#gnb>li>a{
+    display: block; 
+    padding: 5px 30px;
+    position: relative; /*위치기준사용*/
+}
+#gnb>li>a::after{
+    content:'';
+    width:0; height:0;
+    transition: all .3s;
+}
+#gnb>li:hover>a::after{
+    content: '';
+    width:40%; height: 2px;
+    background: darkblue;
+    position: absolute;
+    left:50%; bottom: -10px;
+    transform: translateX(-50%);
+}
+
+/**/
+#under_nav{
+    margin-top: 30px;
+    width: 100%;
+}
+
+/*관람후기*/
+#review .flex{
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+#review .bd_btm{
+    margin-top: 22px;
+}
+
+/*공지사항*/
+#notice{width: 30%;}
+#notice .flex_col li{
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+#notice .flex_col li a{
+    width: 80%;
+    display: block;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+/*소문예지*/
+#somun_col{justify-content: space-between;}
+#somun p{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/*제휴사이트*/
+#affiliate .flex_col li{
+    margin: 10px 0;
+}
+
+/*전숙희문학상*/
+#prize .flex_col{
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+}
+#prize hr{
+    width: 75%; height: 0.5px;
+    background-color: darkblue;
+}
+#prize .flex_col li{
+    margin: 10px 0;
+}
+.name{font-size: 1.1rem;}
+
+/*소장자료*/
+#collect_col{
+    justify-content: space-between;
+}
+#collect_col p{text-align: center;}
+
+/*이용안내*/
+#information ul:nth-child(2) li{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 10px;
+}
+#information ul:nth-child(2) li:nth-child(even){
+    text-indent: 10px; margin-bottom: 20px;
+}
+
+/*오늘의 작가*/
+#today .bd_btm{
+    margin-bottom: 15px;
+}
+#today figure{
+    text-align: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#today figcaption{
+    margin-top: 20px;
+}
+#last_col{justify-content: space-between;}
+
+/*footer*/
+footer{
+    height: 200px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1.1;
+    margin-bottom: 50px;
+}
+.bd_top{
+    border-top: 3px solid #f0ddb4;
+    margin: 50px 0;
+    justify-content: center;
+}
+.bd_top li{
+    margin: 50px 20px 0 0;
+}
+.bd_top li::after{
+    content: '|';
+    margin-left: 15px;
+}
+.bd_top li:last-child:after{content: '';}
+#copy{margin-bottom: 5px;}
+
+/*슬라이드만*/
+#wrapper01{
+    width:610px;
+    margin:0 auto;
+}
+#around{
+    width:295px;
+    margin:0 auto;
+}
+#wrapper03{
+    width:235px; height: 310px;
+    margin:0 auto;
+}
+#wrapper04{
+    width:100px;
+    margin:0 auto;
+}
+#wrapper05{
+    width:100px;
+    margin:0 auto;
+}
+#wrapper03 .bx-wrapper .bx-prev,
+#wrapper04 .bx-wrapper .bx-prev,
+#wrapper05 .bx-wrapper .bx-prev{
+    left: -40px;
+}
+#wrapper03 .bx-wrapper .bx-next,
+#wrapper04 .bx-wrapper .bx-next,
+#wrapper05 .bx-wrapper .bx-next{
+    right: -40px;
+}
+#wrapper03 .bx-wrapper .bx-pager,
+#wrapper04 .bx-wrapper .bx-pager,
+#wrapper05 .bx-wrapper .bx-pager{
+    display: none;
+}
+#wrapper04 .bx-wrapper,
+#wrapper05 .bx-wrapper {margin-bottom: 0;}
