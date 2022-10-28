@@ -5,7 +5,7 @@ a,a:link,a:visited,a:hover,a:active{
 	color:#666;
 }
 body{
-	width:1920px; margin:0 auto;
+	width:100%; margin:0 auto;
 }
 /* 헤더 영역 */
 .nav{
@@ -53,6 +53,7 @@ body{
 	width:1920px;
 	position:relative;
 }
+#vb img{width: 100%;}
 #vb>h2{
 	text-indent:-9999px;
 	overflow:hidden;
