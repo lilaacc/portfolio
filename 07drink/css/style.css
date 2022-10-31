@@ -19,7 +19,7 @@ section>h2{text-indent: -9999px; overflow: hidden;}
 /*모바일 모드*/
 .header{position: relative; padding: 20px 5%;}
 .logo{width:6%;}
-.logo img{width:100%;} /*로고 비율에 따라서 수정 해야한다*/
+.logo img{width:180%;} /*로고 비율에 따라서 수정 해야한다*/
 #gnb{
     display: block;
     position: absolute;
@@ -40,7 +40,7 @@ section>h2{text-indent: -9999px; overflow: hidden;}
     margin-top:10px; /*로고의 비율에 따라서 높이가 달라지기 때문에 위치 잡기위해 마진으로*/
     cursor: pointer;
     position: absolute;
-    top:10px; right:5%;
+    top:25px; right:5%;
 }
 .menu span{
     display: block;
@@ -258,4 +258,5 @@ section>h2{text-indent: -9999px; overflow: hidden;}
     .review_list, .form_box{width:70%;}
     .review_list>li{width:30%;}
     .location_section iframe{width:100%;}
+    .logo img{width:100%;}
 }
